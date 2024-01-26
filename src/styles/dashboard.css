@@ -46,10 +46,9 @@
     margin: 0 15px 0px 12px;
 }
 
-
 #left-nav-mob {
-    height: 100vh;
-    position: fixed;
+    height: 91vh;
+    position: absolute;
     display: none;
     width: 75%;
     color: #fff;
@@ -57,7 +56,6 @@
     box-sizing: border-box;
     padding: 20px 20px;
 }
-
 
 #left-nav-mob .left-nav-top {
     display: flex;
