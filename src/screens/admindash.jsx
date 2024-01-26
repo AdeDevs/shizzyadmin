@@ -7,9 +7,13 @@ import Close from "../assets/close.png"
 function Dashboard() {
     function CloseMenu() {
       document.getElementById("left-nav-mob").style.display = "none"
+      document.getElementById("open-menu").style.display = "block"
+      document.getElementById("close-menu").style.display = "none"
     }
     function OpenMenu() {
       document.getElementById("left-nav-mob").style.display = "initial"
+      document.getElementById("close-menu").style.display = "block"
+      document.getElementById("open-menu").style.display = "none"
     }
 
   return (
@@ -17,6 +21,7 @@ function Dashboard() {
       <header>
         <section>
         <img id="open-menu" onClick={OpenMenu} src={Menu}  />
+        <img id="close-menu" onClick={CloseMenu} src={Close}  />
         <h1>Welcome Admin</h1>
         </section>
         <section>
@@ -43,7 +48,6 @@ function Dashboard() {
 
         <aside id="left-nav-mob">
           <div className="left-nav-top">
-        <img id="close-menu" onClick={CloseMenu} src={Close}  />
             <img src={Admin} />
             <section>
               <h1>John Doe</h1>

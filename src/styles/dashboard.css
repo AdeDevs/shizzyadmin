@@ -37,16 +37,23 @@
 /* left-nav-mobile design */
 #open-menu {
     margin-right: 20px;
+    display: none;
 }
+
+#close-menu {
+    width: 20px;
+    display: none;
+    margin: 0 15px 0px 12px;
+}
+
 
 #left-nav-mob {
     height: 100vh;
     position: fixed;
+    display: none;
     width: 75%;
-    overflow: scroll;
     color: #fff;
-    top: 0;
-    background-color: #002bad;
+    background-color: #1441C9;
     box-sizing: border-box;
     padding: 20px 20px;
 }
@@ -75,10 +82,6 @@
     margin-right: 10px;
 }
 
-#left-nav-mob #close-menu {
-    width: 15px;
-}
-
 #left-nav-mob ul {
     margin: 30px 0;
     list-style-type: none;
@@ -96,6 +99,8 @@
     background-color: #1441C9;
     width: 200px;
     padding: 20px 40px;
+    color: #fff;
+    height: 94%;
 }
 
 .left-nav .left-nav-top {
@@ -141,6 +146,10 @@
     margin: 0 auto;
     padding: 29px 25px;
     box-sizing: border-box;
+    position: fixed;
+    height: 93%;
+    overflow: scroll;
+    right: 25px;
 }
 
 .admin-box .admin-main h1 {
@@ -217,6 +226,8 @@
     .admin-box .admin-main {
         width: 100%;
         padding: 15px 0px;
+        position: static;
+        height: 91vh;
     }
     .admin-box .admin-main h1 {
         padding: 0 10px;
@@ -238,5 +249,8 @@
     }
     .dashboard header {
         padding: 20px 10px;
+    }
+    #open-menu {
+        display: block;
     }
 }
