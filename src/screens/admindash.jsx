@@ -1,12 +1,24 @@
 import "../styles/dashboard.css";
-import Admin from "../assets/user.png"
+import Admin from "../assets/profile.png"
 import Dummy from "../assets/third.webp"
+import Menu from "../assets/menu.png"
+import Close from "../assets/close.png"
 
 function Dashboard() {
+    function CloseMenu() {
+      document.getElementById("left-nav-mob").style.display = "none"
+    }
+    function OpenMenu() {
+      document.getElementById("left-nav-mob").style.display = "initial"
+    }
+
   return (
     <div className="dashboard">
       <header>
+        <section>
+        <img id="open-menu" onClick={OpenMenu} src={Menu}  />
         <h1>Welcome Admin</h1>
+        </section>
         <section>
           <img src={Admin} />
           <p>John Doe</p>
@@ -28,6 +40,23 @@ function Dashboard() {
             <li>View Admin Details</li>
           </ul>
         </aside>
+
+        <aside id="left-nav-mob">
+          <div className="left-nav-top">
+        <img id="close-menu" onClick={CloseMenu} src={Close}  />
+            <img src={Admin} />
+            <section>
+              <h1>John Doe</h1>
+              <p>Admnistrator</p>
+            </section>
+          </div>
+          <ul>
+            <li id="special">Dashboard</li>
+            <li>Create Article</li>
+            <li>View Admin Details</li>
+          </ul>
+        </aside>
+
         <main className="admin-main">
           <h1>Dashboard</h1>
 

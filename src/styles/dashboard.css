@@ -8,17 +8,22 @@
     width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
+    align-items: center;
+    color: #fff;
     padding: 30px 40px;
     font-family: "Poppins", sans-serif;
-    background-color: rgba(128, 128, 128, 0.245);
+    background-color: #1441C9;
 }
 
 .dashboard header section {
     display: flex;
+    align-items: center;
 }
 
 .dashboard header section img {
     margin-right: 10px;
+    width: 30px;
+    display: block;
 }
 
 .admin-box {
@@ -26,10 +31,69 @@
     height: 89%;
     box-sizing: border-box;
     flex-wrap: wrap;
+    position: relative;
 }
 
+/* left-nav-mobile design */
+#open-menu {
+    margin-right: 20px;
+}
+
+#left-nav-mob {
+    height: 100vh;
+    position: fixed;
+    width: 75%;
+    overflow: scroll;
+    color: #fff;
+    top: 0;
+    background-color: #002bad;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+
+#left-nav-mob .left-nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+#left-nav-mob .left-nav-top h1 {
+    font-size: 15px;
+}
+
+#left-nav-mob .left-nav-top p {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+#left-nav-mob .left-nav-top img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#left-nav-mob #close-menu {
+    width: 15px;
+}
+
+#left-nav-mob ul {
+    margin: 30px 0;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#left-nav-mob ul li {
+    padding: 20px 20px;
+    margin: 30px 0;
+}
+
+/*left-nav desktop design */
+
 .admin-box .left-nav {
-    background-color: rgba(128, 128, 128, 0.245);
+    background-color: #1441C9;
     width: 200px;
     padding: 20px 40px;
 }
@@ -152,7 +216,10 @@
     }
     .admin-box .admin-main {
         width: 100%;
-        padding: 19px 15px;
+        padding: 15px 0px;
+    }
+    .admin-box .admin-main h1 {
+        padding: 0 10px;
     }
     .admin-box .admin-main section {
         display: block;
@@ -165,5 +232,11 @@
     .admin-box .admin-main section div img {
         margin: 10px 0;
         width: 100%;
+    }
+    .left-nav {
+        display: nonee;
+    }
+    .dashboard header {
+        padding: 20px 10px;
     }
 }
