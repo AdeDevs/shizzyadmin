@@ -1,28 +1,28 @@
 import "../styles/dashboard.css";
-import Admin from "../assets/profile.png"
-import Dummy from "../assets/third.webp"
-import Menu from "../assets/menu.png"
-import Close from "../assets/close.png"
+import Admin from "../assets/profile.png";
+import Menu from "../assets/menu.png";
+import Close from "../assets/close.png";
+import { NavLink, Outlet } from "react-router-dom";
 
 function Dashboard() {
-    function CloseMenu() {
-      document.getElementById("left-nav-mob").style.display = "none"
-      document.getElementById("open-menu").style.display = "block"
-      document.getElementById("close-menu").style.display = "none"
-    }
-    function OpenMenu() {
-      document.getElementById("left-nav-mob").style.display = "initial"
-      document.getElementById("close-menu").style.display = "block"
-      document.getElementById("open-menu").style.display = "none"
-    }
+  function CloseMenu() {
+    document.getElementById("left-nav-mob").style.display = "none";
+    document.getElementById("open-menu").style.display = "block";
+    document.getElementById("close-menu").style.display = "none";
+  }
+  function OpenMenu() {
+    document.getElementById("left-nav-mob").style.display = "initial";
+    document.getElementById("close-menu").style.display = "block";
+    document.getElementById("open-menu").style.display = "none";
+  }
 
   return (
     <div className="dashboard">
       <header>
         <section>
-        <img id="open-menu" onClick={OpenMenu} src={Menu}  />
-        <img id="close-menu" onClick={CloseMenu} src={Close}  />
-        <h1>Welcome Admin</h1>
+          <img id="open-menu" onClick={OpenMenu} src={Menu} />
+          <img id="close-menu" onClick={CloseMenu} src={Close} />
+          <h1>Welcome Admin</h1>
         </section>
         <section>
           <img src={Admin} />
@@ -40,9 +40,15 @@ function Dashboard() {
             </section>
           </div>
           <ul>
-            <li id="special">Dashboard</li>
-            <li>Create Article</li>
-            <li>View Admin Details</li>
+            <li>
+              <NavLink to="/dashboard">Dashboard </NavLink>
+            </li>
+            <li>
+              <NavLink to="create">Create Article </NavLink>
+            </li>
+            <li>
+              <NavLink to="admincreate"> View Admin Details </NavLink>
+            </li>
           </ul>
         </aside>
 
@@ -55,103 +61,21 @@ function Dashboard() {
             </section>
           </div>
           <ul>
-            <li id="special">Dashboard</li>
-            <li>Create Article</li>
-            <li>View Admin Details</li>
+            <li>
+              <NavLink to="">Dashboard </NavLink>
+            </li>
+            <li>
+              <NavLink to="create">Create Article </NavLink>
+            </li>
+            <li>
+              <NavLink to="admincreate"> View Admin Details </NavLink>
+            </li>
           </ul>
         </aside>
-
-        <main className="admin-main">
-          <h1>Dashboard</h1>
-
-          <section>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-              <article>
-              <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio magnam mollitia odit assumenda veniam vitae praesentium enim id, rem nulla ipsum quia nemo error? Earum corporis quod vitae! Modi, harum.</p>
-              <button type="submit">Delete</button>
-              </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-            <div>
-              <aside>
-                <img src={Dummy} />
-              </aside>
-                <article>
-                  <h2>Athene Network Review – How to mine ATH Coin, Legit or Scam?</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veritatis quis a numquam magni, sequi totam voluptatibus, consectetur sunt rem nisi iusto quisquam, odit voluptatem dolores culpa sit amet omnis.</p>
-                  <button type="submit">Delete</button>
-                </article>
-            </div>
-          </section>
-          
-        </main>
+        <Outlet />
       </div>
     </div>
   );
 }
-
 
 export default Dashboard;

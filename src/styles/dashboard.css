@@ -3,6 +3,21 @@
     height: 100vh;
 }
 
+.dashboard a {
+    color: inherit;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+.dashboard a.active {
+    border-left: 2px solid #000;
+}
+
+/* .dashboard ul li:first-child a.active {
+    border-top: 2px solid #000;
+    border-right: none;
+} */
+
 .dashboard header {
     display: flex;
     width: 100%;
@@ -47,7 +62,7 @@
 }
 
 #left-nav-mob {
-    height: 91vh;
+    height: 100%;
     position: absolute;
     display: none;
     width: 75%;
@@ -95,10 +110,11 @@
 
 .admin-box .left-nav {
     background-color: #1441C9;
-    width: 200px;
+    width: 300px;
+    box-sizing: border-box;
     padding: 20px 40px;
     color: #fff;
-    height: 94%;
+    height: 100%;
 }
 
 .left-nav .left-nav-top {
@@ -131,12 +147,9 @@
 }
 
 .left-nav ul li {
-    padding: 20px 20px;
     margin: 30px 0;
-}
-
-#special {
-    border-left: 2px solid #000;
+    box-sizing: border-box;
+    padding: 20px 0px;
 }
 
 .admin-box .admin-main {
@@ -225,7 +238,7 @@
         width: 100%;
         padding: 15px 0px;
         position: static;
-        height: 91vh;
+        height: 93vh;
     }
     .admin-box .admin-main h1 {
         padding: 0 10px;
