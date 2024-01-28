@@ -73,6 +73,7 @@ function Dashboard() {
           </ul>
         </aside>
         <Outlet />
+
       </div>
     </div>
   );

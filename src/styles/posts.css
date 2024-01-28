@@ -1,0 +1,99 @@
+.create-posts {
+  display: flex;
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 29px 25px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.create-posts form {
+  width: 100%;
+  position: relative;
+}
+
+.create-posts input,
+.create-posts textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.create-posts input {
+  border-radius: 10px 10px 0 0;
+  font-size: 25px;
+  padding: 20px;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.create-posts input::placeholder {
+    text-transform: capitalize;
+}
+
+.create-posts textarea {
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  height: 400px;
+}
+
+.create-posts .cat {
+    display: flex;
+    margin: 10px 0;
+    text-transform: capitalize;
+    align-items: center;
+    background-color: red;
+}
+
+.create-posts .cat select {
+    font-family: "Poppins", sans-serif;
+    background-color: #1441c9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.create-posts button {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: #1441c9;
+  padding: 10px 30px;
+  color: white;
+  margin: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  transition: 300ms;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.create-posts button:hover {
+  background-color: #001b6c;
+}
+
+
+@media (max-width: 700px) {
+    .create-posts {
+        padding:10px;
+    }
+    .create-posts form {
+        height: 100%;
+        position: static;
+    }
+    .create-posts textarea {
+        height: 80%;
+    }
+    .create-posts button {
+        margin-right: 15px;
+    }
+}
