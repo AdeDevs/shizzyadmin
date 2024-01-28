@@ -11,8 +11,8 @@ function CreatePosts() {
                     <option value="Crypto">Crypto</option>
                     <option value="Airtime">Airtine</option>
                 </select>
-                </section>
                 <button>Post</button>
+                </section>
             </form>
         </div>
     )

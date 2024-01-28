@@ -226,8 +226,7 @@
     background-color: rgb(142, 0, 0);
   }
 
-
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
     .admin-box .left-nav {
         display: none;
     }
