@@ -61,13 +61,13 @@ function Dashboard() {
             </section>
           </div>
           <ul>
-            <li>
+            <li onClick={CloseMenu}>
               <NavLink to="">Dashboard </NavLink>
             </li>
-            <li>
+            <li onClick={CloseMenu}>
               <NavLink to="create">Create Article </NavLink>
             </li>
-            <li>
+            <li onClick={CloseMenu}>
               <NavLink to="admincreate"> View Admin Details </NavLink>
             </li>
           </ul>

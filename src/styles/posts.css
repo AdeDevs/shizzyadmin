@@ -21,6 +21,7 @@
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #000;
+  background-color: #1441c936;
   padding: 10px 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -31,10 +32,6 @@
   padding: 20px;
   text-transform: capitalize;
   font-family: "Josefin Sans", sans-serif;
-}
-
-.create-posts input::placeholder {
-    text-transform: capitalize;
 }
 
 .create-posts textarea {
@@ -48,7 +45,6 @@
     margin: 10px 0;
     text-transform: capitalize;
     align-items: center;
-    background-color: red;
 }
 
 .create-posts .cat select {
