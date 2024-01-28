@@ -14,9 +14,9 @@ function App() {
                 <Route path="/" element={<AdminLogin/>}></Route>
                 <Route path="/forgotpassword" element={<ForgotScreen />}> </Route>
                 <Route path="/dashboard" element={<Dashboard/>}>
-                    <Route path="/dashboard" element={<DeletePosts/>} />
+                    <Route path="/dashboard" element={<AdminDetails/>} />
                     <Route path="create" element={<CreatePosts/>} />
-                    <Route path="admincreate" element={<AdminDetails />} />
+                    <Route path="admincreate" element={<DeletePosts />} />
                 </Route>
             </Routes>
             </article>

@@ -1,0 +1,111 @@
+ .admin-edit {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 29px 25px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 93%;
+    overflow: scroll;
+    right: 25px;
+}
+
+ .admin-edit h1 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+ .admin-edit section {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .admin-edit section div {
+    margin: 10px;
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #1441C9;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+ .admin-edit section div article {
+    margin: 0 10px;
+}
+
+ .admin-edit section div h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ .admin-edit section div p {
+    font-size: 13px;
+}
+
+ .admin-edit section div img {
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+}
+
+ .admin-edit section div button {
+    background-color: red;
+    padding: 10px 30px;
+    color: white;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    transition: 300ms;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+  
+   .admin-edit section div button:hover {
+    cursor: pointer;
+    background-color: rgb(142, 0, 0);
+  }
+
+@media (max-width: 1300px) {
+     .left-nav {
+        display: none;
+    }
+     .admin-edit {
+        width: 100%;
+        padding: 15px 0px;
+        position: static;
+        height: 93vh;
+    }
+     .admin-edit h1 {
+        padding: 0 10px;
+    }
+     .admin-edit section {
+        box-sizing: border-box;
+        width: 100%;
+    }
+     .admin-edit section div {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+     .admin-edit section div img {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .left-nav {
+        display: nonee;
+    }
+    .dashboard header {
+        padding: 20px 10px;
+    }
+    #open-menu {
+        display: block;
+    }
+}

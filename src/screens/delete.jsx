@@ -7,7 +7,7 @@ function DeletePosts() {
     return (
         <div>
             <main className="admin-main">
-          <h1>Dashboard</h1>
+          <h1>Delete Articles</h1>
 
           <section>
             <div>
